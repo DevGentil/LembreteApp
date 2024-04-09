@@ -1,0 +1,43 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5002"
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    networks:
+      - app-network
+    env_file:
+      - .env
+
+  mariadb:
+    image: mariadb
+    environment:
+      - MARIADB_DATABASE=lembretes
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_USER=lembretes
+      - MARIADB_PASSWORD=password
+    networks:
+      - app-network
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    healthcheck:
+      test: ["CMD", "mariadb", "-uroot", "-proot", "--execute", "use lembretes;"]
+      timeout: 5s
+      interval: 10s
+      retries: 10
+
+volumes:
+  mysql_data:
+
+
+networks:
+  app-network:
+    driver: bridge
