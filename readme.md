@@ -1,8 +1,8 @@
 # Lembretes - Seu app de controle de tarefas
 
 <p align="center">
-  <img alt="MyLinks" src="./Github/Darkmode.jpg" width="20%">
-  <img alt="MyLinks" src="./Github/Lightmode.jpg" width="20%">
+  <img alt="MyLinks" src="./Github/Darkmode.png" width="30%">
+  <img alt="MyLinks" src="./Github/Lightmode.png" width="30%">
 </p>
 
 O Lembretes App é um aplicativo completo para gerenciamento de lembretes, dividido em um backend RESTful e um frontend React. Ele permite aos usuários criar, visualizar, editar e excluir lembretes.
