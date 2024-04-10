@@ -33,9 +33,15 @@ O backend é uma API RESTful responsável por gerenciar os dados dos lembretes. 
 
 #### Frontend
 
+O frontend é uma interface de usuário construída com React, permitindo interações fáceis e eficientes com a API do backend.
+
 - React
 - TypeScript
 - Styled Components
 - Testing Library
+
+- ## Execução
+
+Detalhes de xecuçao do projeto está no readme de cada aplicação.
 
 Feito com ❤️ por [DevGentil](https://github.com/DevGentil).
