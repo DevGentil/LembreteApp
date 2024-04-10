@@ -14,6 +14,10 @@ O Lembretes App é um aplicativo completo para gerenciamento de lembretes, divid
 - **Edição de Lembrete**: Usuários podem editar lembretes existentes.
 - **Exclusão de Lembrete**: Permite a remoção de lembretes indesejados.
 
+## Execução
+
+- Detalhes de xecuçao do projeto está no readme de cada aplicação.
+
 ## Componentes do Projeto
 
 ### Backend
@@ -39,9 +43,5 @@ O frontend é uma interface de usuário construída com React, permitindo intera
 - TypeScript
 - Styled Components
 - Testing Library
-
-- ## Execução
-
-Detalhes de xecuçao do projeto está no readme de cada aplicação.
 
 Feito com ❤️ por [DevGentil](https://github.com/DevGentil).
